@@ -180,6 +180,27 @@ function unlockAcct {
    
 
 }
+
+function userVerify {
+    cls
+    $pin = Get-Random -minimum 00000001 -maximum 99999999
+    Write-Host "User Verification Check"  
+    Write-Host ""                                                                               
+    $usr = Read-Host "[+] Enter User Name"
+    Write-Host ""
+    Write-Host "Please confirm both the Manager and Challenge Pin with the user" -ForegroundColor White -BackgroundColor Red
+    Get-ADUser $usr -Properties Name,Manager,MobilePhone | Format-List Name,Manager,MobilePhone
+    Write-Host ""
+    Write-Host "Text the user the challenge pin and have them recite it back to you." -ForegroundColor White -BackgroundColor Red
+    Write-Host  $usr "Challenge Pin:" $pin 
+    Write-Host ""
+    Write-Host ""
+    $again = Read-Host "[+] Do you want to run another check? [Y/N]"
+    Write-Host ""
+	if ($again -eq "y"){userVerify}
+	elseif ($again -eq "n"){menu}
+	elseif ($again -ne "y" -or $again -ne "n"){exit}
+}
 function orientationCheck {
     cls
     Write-Host ""
@@ -237,7 +258,8 @@ function Menu
     Write-Host "5: Device Last Known IP [SCCM]"
     Write-Host "6: Disable AD Account"
     Write-Host "7: Unlock AD Account"
-    Write-Host "8: New Hire Orientation Password Reset Check"
+    Write-Host "8: User Verification"
+    Write-Host "9: New Hire Orientation Password Reset Check"
     Write-Host "Q: Quit"
     Write-Host "" 
     Write-Host ""
@@ -251,7 +273,8 @@ function Menu
     elseif($input -eq "5"){lastknownIP;again}
     elseif($input -eq "6"){disableAcct;again}
     elseif($input -eq "7"){unlockAcct;again}
-    elseif($input -eq "8"){orientationCheck;again}
+    elseif($input -eq "8"){userVerify;again}
+    elseif($input -eq "9"){orientationCheck;again}
     elseif($input -eq "q") {exit}
     elseif($input -eq 1..8){Write-Host ""}
     elseif($input -ne 1..8){Write-Host "Well that was fun...you feel like putting a number from the menu in?"}
