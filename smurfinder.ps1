@@ -180,7 +180,8 @@ function unlockAcct {
    
 
 }
-cls
+function orientationCheck {
+    cls
     Write-Host ""
     Write-Host "New Hire Orientation Password Reset Check"
     Write-Host ""
