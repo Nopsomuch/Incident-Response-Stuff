@@ -93,9 +93,11 @@ fi
 cleanup(){
     if [[ $zip ]]; then
         $delzip $zip
-        echo -e "{RED} [+] ZIP FILE DELETED"
+        echo -e "${GREEN}[+] ZIP FILE DELETED"
         $deny
-        echo -e "{RED} [+] Install permissions restored!"
+        echo -e "${GREEN}[+] Install permissions restored!"
+        sudo rm -rf $memdump
+        echo -e "${GREEN}[+] OSXPMEM.APP DELETED!"
 fi
 }
 
