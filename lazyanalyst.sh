@@ -23,18 +23,18 @@ GREEN='\033[0;32m'
 # All api's below are free to sign up for; enter your generated API below and you can interchange variables
 # at one time or another I have used all of these but tend to switch them in an out.
 
-vt_api='8875426f5dc10a28df1de807d7d0a588928b244b8c93a0c567fb890d52cbf42d'           # Virus Total - API
-phishtank_api='bc0a78c4a241f4181ae8bf804e5f750f1c8855795714079e9882b8ceaa3b0c8b'    # Phish Tank - API
-geo_api='dd0ba80f2cab4c52baf72010038a22e2'                                          # IP Geolocation.io - API
-hybrid_api='c8ksscok8o84k00wkg8ss048kg8sccs484s4so0c8ogwgcow0ks00soos8gkw00s'       # Hybrid Analysis - API
-screenshot_api='bcab1d3269c1795ebf1577be5240aae2'                                   # ScreenshotLayer - API
-myips_api='1588145206-751345199-891866134'                                          # MyIPS - API
-urlscan_api='51c54de8-959b-4c75-8f3c-5ac491568dae'                                  # URLScan.io - API
-urlvoid_api='7f70b8b5f27430577beb6a0184862b6d89830894'                              # URLVoid - API
-opswat_api='e81d53e0e635b90e0b946b6eb075b34d'                                       # OPSWat - MetaDefender - API
-riskiq_api='c90167f7dc7c49f5c85e9ad4d7401d8c5bfb76a4c9e0c0eb8f1061a78faf419b'       # RiskIQ - API
-riskiq_key='nopsomuch9@gmail.com'                                                   # RiskIQ - Key [Email Address]
-sndbox_key='701b3c55-ffd1-4ed9-ae21-8ada98c729f8'									                  # SNDBOX - Key
+vt_api='ADD API KEY HERE'         						    # Virus Total - API
+phishtank_api='ADD API KEY HERE'   						    # Phish Tank - API
+geo_api='ADD API KEY HERE'                                                          # IP Geolocation.io - API
+hybrid_api='ADD API KEY HERE'      						    # Hybrid Analysis - API
+screenshot_api='ADD API KEY HERE'                                                   # ScreenshotLayer - API
+myips_api='ADD API KEY HERE'                                                        # MyIPS - API
+urlscan_api='ADD API KEY HERE'                              			    # URLScan.io - API
+urlvoid_api='ADD API KEY HERE'                         				    # URLVoid - API
+opswat_api='ADD API KEY HERE'                          			            # OPSWat - MetaDefender - API
+riskiq_api='ADD API KEY HERE'    						    # RiskIQ - API
+riskiq_key='ADD API KEY HERE'                                                       # RiskIQ - Key [Email Address]
+sndbox_key='ADD API KEY HERE'					                    # SNDBOX - Key
 
 
 pause(){
